@@ -14,7 +14,7 @@ var m8ball = ["It is certain","It is decidedly so", "Without a doubt" , "Yes, de
 
 bot.on('ready', function() {
     console.log(bot.username + " - (" + bot.id + ")");
-    console.log("My body is ready! DemSquirrel <3");
+    console.log("My body is ready! Lord Squirrel <3");
     bot.setPresence({
         idle_since: null,
         game: "Hacking the NSA"
