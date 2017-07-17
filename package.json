@@ -2,7 +2,12 @@
   "name": "PizzaBOT",
   "version": "0.0.1",
   "description": "Chatbot for mujaffa",
+  "scripts": {
+    "install": "mkdir cats",
+    "start": "node index.js"
+  },
   "dependencies": {
-    "discord.io": "^1.8.8"
+    "discord.io": "^1.8.8",
+    "dotenv": "^4.0.0"
   }
 }

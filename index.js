@@ -1,11 +1,12 @@
-var DiscordClient = require('discord.io');
-var fs = require('fs');
-var request = require('request');
+let DiscordClient = require('discord.io');
+let fs = require('fs');
+let request = require('request');
+require('dotenv').config()
 var i = 0
 
 var bot = new DiscordClient({
     autorun: true,
-    token: "MTcyNjg4MDU2NTM5Njc2Njcy.DE5ysA.RBZgWGelEqUuIKyDys1mo8P6OJY"
+    token: process.env.discordApiKey
 });
 
 var cmds = ["!fuckdig", "!ping","!help","!cats","!heman"];
@@ -14,7 +15,6 @@ var m8ball = ["It is certain","It is decidedly so", "Without a doubt" , "Yes, de
 bot.on('ready', function() {
     console.log(bot.username + " - (" + bot.id + ")");
     console.log("My body is ready! DemSquirrel <3");
-    //listVoiceChannels("171947029197619200")
     bot.setPresence({
         idle_since: null,
         game: "Hacking the NSA"
